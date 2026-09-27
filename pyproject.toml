@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-grid-fusion-vpp-kernel"
+version = "0.1.0"
+description = "Algorithmic NP-Hard Optimization Kernel for Smart Grids, N-1 Security-Constrained OPF, Virtual Power Plants, Dynamic Line Rating, and Tokamak Fusion Plasma MHD Equilibrium."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Ahmed Hassan", email = "ahmed@example.com" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: System :: Distributed Computing",
+]
+dependencies = []
+
+[project.scripts]
+smart-grid-vpp-kernel = "smart_grid_fusion_vpp_kernel.cli:main"
